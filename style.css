@@ -30,12 +30,23 @@ a{
    color:rgb(12, 8, 8);
    font-size: x-large;
     margin-right: 30px;
+    position: relative;
+    padding: 0 20px;
+
 }
-  
-a:hover{
-    opacity: .5;
+  a::after{
+    content: "";
+    position: absolute;
+    background-color: lawngreen;
+    height: 3px;
+    width: 0;
+    left:0% ;
+    bottom: -10px;
+  }
+a:hover::after{
+    
     transition: .9s;
-    color:blue;
+    width: 100%;
 
 }
 
